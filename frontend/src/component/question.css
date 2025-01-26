@@ -1,0 +1,99 @@
+
+.question-list {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  #Noques{
+    font-size: 30px;
+    
+  }
+  .innerBox {
+    border: 1px solid black;
+    width: 70%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+  }
+  
+  #question {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  #typeOf,
+  #type {
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgb(236, 200, 145);
+    margin: 5px;
+  }
+  
+  .q-content p {
+    font-size: 18px;
+  }
+  
+  .q-content ul li {
+    list-style-type: none;
+    font-size: 20px;
+  }
+  
+  .word {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #submit {
+    padding: 8px;
+    background-color: rgb(214, 243, 172);
+    border-radius: 7px;
+    border: 1px white;
+    margin-top: 10px;
+  }
+  
+  #more {
+    padding: 8px;
+    background-color: rgb(204, 204, 255);
+    border-radius: 7px;
+    border: 1px white;
+    margin-top: 10px;
+  }
+  
+  .gap {
+    height: 10px; /* Space between Show Answer and Show More */
+  }
+  
+  /* Remove gap between text for 'readalong' and 'contextonly' question types */
+  .q-content.readalong p,
+  .q-content.contextonly p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .question-list {
+      padding: 10px;
+    }
+  
+    .innerBox {
+      width: 100%;
+    }
+  
+    #question {
+      font-size: 18px;
+    }
+  
+    .q-content p {
+      font-size: 16px;
+    }
+  }
+  
